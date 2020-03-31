@@ -72,7 +72,7 @@ let feir: Cat = {
 interface Cat2 {
   name: string;
   age?: number;  // 不是 string 类型的子集，将报错
-  [propName: string]: string;
+  [propName: string]: string | number;
 }
 
 /**
